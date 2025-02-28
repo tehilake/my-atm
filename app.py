@@ -4,6 +4,10 @@ import os
 
 app = Flask(__name__)
 
+@app.route('/')
+def home():
+    return "Welcome to the ATM app!"
+
 def load_accounts():
     """
     Loads the accounts from the 'accounts.json' file.
