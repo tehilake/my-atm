@@ -31,6 +31,8 @@ POST /accounts/<account_number>/deposit :  Deposit Money to an account.
 
 ### Usage Examples:
 
+Example of account numbers available in the system: 12345, 67890, 11222.
+
 - GET / – Returns a welcome message.  
 Example: A user accesses the homepage and sees a simple welcome text.  
 
