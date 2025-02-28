@@ -1,11 +1,17 @@
 # Project Name: ATM Server
 
+## Project Links
+
+- **GitHub Repository**: [https://github.com/tehilake/my-atm](https://github.com/tehilake/my-atm)
+- **Live Application**: [https://my-atm.herokuapp.com](https://my-atm-839f5a3157da.herokuapp.com/)
+
+
 ### Description:
 
 The ATM Server is a simple API that simulates ATM operations. The server allows users to:  
 - Check their account balance  
 - Withdraw money  
-- Deposit money  
+- Deposit money
 
 ### Technologies:
 
@@ -94,6 +100,29 @@ The API ensures that each endpoint serves a clear purpose. Here's how I built it
 - Request Handling: Each path processes requests and returns JSON responses.
 - Data Validation: Before processing requests, input data is validated to prevent errors. If there is an error, a meaningful message is returned to the user.
 - Transaction Logic: For withdrawals, the system checks if there are enough funds before proceeding.
+
+### Project Files:
+**app.py**  
+This file contains the core logic of the ATM Server. It sets up the Flask web application, defines the API routes, and handles the requests. The main responsibilities of app.py are:  
+Defining routes: It specifies the endpoints.  
+Handling requests: It processes GET and POST requests, including validating input and interacting with the accounts.json file.  
+Returning responses: The app sends JSON responses with the appropriate data or error messages.  
+
+**accounts.json**  
+The accounts.json file stores account data in a simple format. It contains a list of accounts, where each account has:  
+account_number: The unique account identifier.
+balance: The current balance of the account.
+Example:
+```json
+{
+    "12345": {
+        "balance": 2345.0
+    },
+    "67890": {
+        "balance": 481.0
+    }
+}
+```
 
 ### Challenges I faced:
 
